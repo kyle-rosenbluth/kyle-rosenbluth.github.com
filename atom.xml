@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[My Blag]]></title>
+  <link href="http://kyle-rosenbluth.github.com/atom.xml" rel="self"/>
+  <link href="http://kyle-rosenbluth.github.com/"/>
+  <updated>2012-08-22T23:54:26-04:00</updated>
+  <id>http://kyle-rosenbluth.github.com/</id>
+  <author>
+    <name><![CDATA[Kyle Rosenbluth]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[new-post]]></title>
+    <link href="http://kyle-rosenbluth.github.com/blog/2012/08/22/new-post/"/>
+    <updated>2012-08-22T23:33:00-04:00</updated>
+    <id>http://kyle-rosenbluth.github.com/blog/2012/08/22/new-post</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+</feed>
