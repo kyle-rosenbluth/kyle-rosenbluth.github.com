@@ -27,13 +27,13 @@
   <link href="/atom.xml" rel="alternate" title="Kyle Rosenbluth" type="application/atom+xml">
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
 <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
 
   
 
 </head>
 
-<body    class="collapse-sidebar sidebar-footer" >
+<body   >
   <header role="banner"><hgroup>
   <h1><a href="/">Kyle Rosenbluth</a></h1>
   
@@ -141,7 +141,71 @@
 
 <aside class="sidebar">
   
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
     
+      <li class="post">
+        <a href="/blog/2012/08/23/First-Post/">First Post</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/08/22/Hello-Blog%21/">Hello Blog!</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/kyle-rosenbluth">@kyle-rosenbluth</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'kyle-rosenbluth',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("krosenbluth", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/krosenbluth" class="twitter-follow-button" data-show-count="false">Follow @krosenbluth</a>
+  
+</section>
+
+
+
+
+
   
 </aside>
 
