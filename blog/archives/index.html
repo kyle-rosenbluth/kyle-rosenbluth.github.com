@@ -9,8 +9,8 @@
   <meta name="author" content="Kyle Rosenbluth">
 
   
-  <meta name="description" content="Blog Archive 2012 Hello Blog!
-Aug 22 2012 Recent Posts Hello Blog! GitHub Repos Status updating... @kyle-rosenbluth on GitHub $.domReady(function &hellip;">
+  <meta name="description" content=" Blog Archive 2012 Hello Blog!
+Aug 22 2012 ">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -95,67 +95,7 @@ Aug 22 2012 Recent Posts Hello Blog! GitHub Repos Status updating... @kyle-rosen
 
 <aside class="sidebar">
   
-    <section>
-  <h1>Recent Posts</h1>
-  <ul id="recent_posts">
     
-      <li class="post">
-        <a href="/blog/2012/08/22/new-post/">Hello Blog!</a>
-      </li>
-    
-  </ul>
-</section>
-
-<section>
-  <h1>GitHub Repos</h1>
-  <ul id="gh_repos">
-    <li class="loading">Status updating...</li>
-  </ul>
-  
-  <a href="https://github.com/kyle-rosenbluth">@kyle-rosenbluth</a> on GitHub
-  
-  <script type="text/javascript">
-    $.domReady(function(){
-        if (!window.jXHR){
-            var jxhr = document.createElement('script');
-            jxhr.type = 'text/javascript';
-            jxhr.src = '/javascripts/libs/jXHR.js';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(jxhr, s);
-        }
-
-        github.showRepos({
-            user: 'kyle-rosenbluth',
-            count: 0,
-            skip_forks: true,
-            target: '#gh_repos'
-        });
-    });
-  </script>
-  <script src="/javascripts/github.js" type="text/javascript"> </script>
-</section>
-
-
-<section>
-  <h1>Latest Tweets</h1>
-  <ul id="tweets">
-    <li class="loading">Status updating...</li>
-  </ul>
-  <script type="text/javascript">
-    $.domReady(function(){
-      getTwitterFeed("krosenbluth", 4, false);
-    });
-  </script>
-  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
-  
-    <a href="http://twitter.com/krosenbluth" class="twitter-follow-button" data-show-count="false">Follow @krosenbluth</a>
-  
-</section>
-
-
-
-
-
   
 </aside>
 
